@@ -1,0 +1,28 @@
+using System;
+
+namespace LabFourTwo
+{
+    public class BankBalance
+    {
+        static void Main(string[] args)
+        {
+            //double SavingAccBal;
+            Console.WriteLine("How much is your saving account balance?");
+            double SavingAccBal = Convert.ToDouble(Console.ReadLine());
+
+            
+            Console.WriteLine("How much is your check account balance?");
+            double CheckAccBal = Convert.ToDouble(Console.ReadLine());
+
+            if (SavingAccBal <= 100 || CheckAccBal <= 50)
+            {
+                Console.WriteLine("Your balances are low!!");
+            } else
+            {
+                Console.WriteLine("You're rich!");
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
